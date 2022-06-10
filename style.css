@@ -1,0 +1,58 @@
+body{
+    background: #000 url("./images/open.png");
+    background-position-x: 15px;
+}
+
+h1{
+    color: black;
+}
+
+.head{
+    background-color: gold;
+    width: 585px;
+    height: 500px;
+    margin-left: 30.5%;
+    margin-top: 6.35%;
+    position: absolute;
+    text-align: center;
+}
+
+
+.button-74 {
+  background-color: goldenrod;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: black 4px 4px 0 0;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: auto;
+  margin-top: 40px;
+  width: 150px;
+  justify-content: center;
+}
+
+.button-74:hover {
+  background-color: gold;
+}
+
+.button-74:active {
+  box-shadow: black 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
