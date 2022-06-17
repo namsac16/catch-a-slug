@@ -70,7 +70,7 @@ body{
 }
 
 .front{
-    background: #fab942 url() no-repeat center center/contain;
+    background: #fab942 url("./images/arsenal.png") no-repeat center center/contain;
 }
 
 .back{
@@ -88,7 +88,7 @@ body{
 
 .match .front{
     border: 0px;
-    background: rgb(4, 44, 2) url() no-repeat center center/contain !important;
+    background: rgb(4, 44, 2) url("./images/arsenal.png") no-repeat center center/contain !important;
     cursor: not-allowed;
     transform: none !important;
 }
