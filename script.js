@@ -47,30 +47,30 @@ const cardsArray = [
         name: "slug12",
         img: "./images/slug12.png",
     },
-    {
-        name: "slug13",
-        img: "./images/slug13.png",
-    },
-    {
-        name: "slug14",
-        img: "./images/slug14.png",
-    },
-    {
-        name: "slug15",
-        img: "./images/slug15.png",
-    },
-    {
-        name: "slug16",
-        img: "./images/slug16.png",
-    },
-    {
-        name: "slug17",
-        img: "./images/slug17.png",
-    },
-    {
-        name: "slug18",
-        img: "./images/slug18.png",
-    },
+    // {
+    //     name: "slug13",
+    //     img: "./images/slug13.png",
+    // },
+    // {
+    //     name: "slug14",
+    //     img: "./images/slug14.png",
+    // },
+    // {
+    //     name: "slug15",
+    //     img: "./images/slug15.png",
+    // },
+    // {
+    //     name: "slug16",
+    //     img: "./images/slug16.png",
+    // },
+    // {
+    //     name: "slug17",
+    //     img: "./images/slug17.png",
+    // },
+    // {
+    //     name: "slug18",
+    //     img: "./images/slug18.png",
+    // },
 ];
 
 const game = document.getElementById("game");  

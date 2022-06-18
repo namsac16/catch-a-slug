@@ -9,12 +9,12 @@ body{
     background: black;
 }
 
-.heading{
+/* .heading{
     text-align: center;
     background: rgb(0, 15, 46);
     padding: 1rem;
     color: bisque;
-}
+} */
 
 .count-container{
     display: flex;
@@ -48,7 +48,7 @@ body{
 }
 
 .grid{
-    /* max-width: 750px; */
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
