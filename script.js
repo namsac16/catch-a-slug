@@ -1,4 +1,7 @@
-const cardsArray = [
+const urlParams = new URLSearchParams(window.location.search);
+const value = urlParams.get('value');
+
+var cardsArray = [
     {
         name: "slug1",
         img: "./images/slug1.png",
@@ -59,19 +62,26 @@ const cardsArray = [
         name: "slug15",
         img: "./images/slug15.png",
     },
-    // {
-    //     name: "slug16",
-    //     img: "./images/slug16.png",
-    // },
-    // {
-    //     name: "slug17",
-    //     img: "./images/slug17.png",
-    // },
-    // {
-    //     name: "slug18",
-    //     img: "./images/slug18.png",
-    // },
+    {
+        name: "slug16",
+        img: "./images/slug16.png",
+    },
+    {
+        name: "slug17",
+        img: "./images/slug17.png",
+    },
+    {
+        name: "slug18",
+        img: "./images/slug18.png",
+    },
 ];
+
+if(value == 1){
+    cardsArray = cardsArray.slice(0,12);
+}
+else if(value == 2){
+    cardsArray = cardsArray.slice(0,15);
+}
 
 const game = document.getElementById("game");  
 const grid = document.createElement("section");  
@@ -146,8 +156,7 @@ const resetGuesses = () => {
 grid.addEventListener("click", function (event) {  
     !timeStarted && secCount();  
     timeStarted = true;  
-    let clicked = event.target;   
-    attemptCount++;  
+    let clicked = event.target;    
     attempts.innerText = attemptCount;  
     if (  
      clicked.nodeName === "SECTION" ||  
@@ -168,6 +177,7 @@ grid.addEventListener("click", function (event) {
         }  
         
         if (firstGuess !== "" && secondGuess !== "") {    
+            attemptCount++; 
             if (firstGuess === secondGuess) {  
                 setTimeout(match, delay);  
                 setTimeout(resetGuesses, delay);  
