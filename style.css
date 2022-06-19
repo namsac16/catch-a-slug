@@ -5,10 +5,23 @@ body{
 
 h1{
     color: black;
+    font-family: 'Fascinate', cursive;
+    font-size: 70px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3{
+  color: black;
+  font-family: 'Fascinate', cursive;
+  font-size: 35px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .head{
     background-color: gold;
+    border-radius: 25px;
     width: 585px;
     height: 500px;
     margin-left: 30.5%;
@@ -37,7 +50,7 @@ h1{
   touch-action: manipulation;
   margin: auto;
   margin-top: 40px;
-  width: 150px;
+  width: 250px;
   justify-content: center;
 }
 
