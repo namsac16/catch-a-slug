@@ -83,6 +83,9 @@ else if(value == 2){
     cardsArray = cardsArray.slice(0,15);
 }
 
+var total = cardsArray.length;
+var completed = 0;
+
 const game = document.getElementById("game");  
 const grid = document.createElement("section");  
 grid.classList.add("grid");  
@@ -185,6 +188,15 @@ grid.addEventListener("click", function (event) {
                 matched.forEach(node => node.addEventListener('click',function (e) {    
                 e.stopPropagation();  
                 }))  
+                completed++;
+                if(completed === total){
+                    var score = 100;
+                    if(attemptCount > total)
+                        score -= (attemptCount - total);
+                    if(min > 1)
+                        score -= min;
+                    window.location.href = `score.html?sc=${score}`;
+                }
             } 
             else {  
                 setTimeout(resetGuesses, delay);  
