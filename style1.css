@@ -86,7 +86,6 @@ body{
 }
 
 .selected{
-    /* border: 4px solid gold; */
     transform: rotateY(180deg);
     cursor: not-allowed;
 }
